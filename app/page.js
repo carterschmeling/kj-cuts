@@ -107,7 +107,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <span className="text-2xl">💵</span>
-            <p className="text-lg">Cash or Venmo accepted</p>
+            <p className="text-lg">Cash or Apple Cash accepted</p>
           </div>
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <span className="text-2xl">⏰</span>
