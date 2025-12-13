@@ -15,9 +15,8 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO WITH BACKGROUND IMAGE */}
+      {/* HERO */}
       <section className="relative min-h-[650px] flex items-center justify-center text-white">
-        {/* Background Image */}
         <Image
           src="/IMG_0270.jpeg"
           alt="KJ Cuts Background"
@@ -25,11 +24,8 @@ export default function Home() {
           priority
           style={{ objectFit: 'cover' }}
         />
-
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <p className="text-blue-400 uppercase tracking-widest text-sm mb-4">
             Professional Cuts • Home Studio
@@ -38,12 +34,12 @@ export default function Home() {
             Fresh Cuts.<br />Fair Price.
           </h2>
           <p className="text-gray-200 text-xl mb-10">
-            Clean fades. Sharp lineups. No overpriced shops.
+            Clean, professional haircuts without the barbershop prices.
           </p>
           <div className="flex gap-6 justify-center flex-wrap">
             <a
               href="#services"
-              className="bg-white text-black px-8 py-4 rounded-md font-bold hover:bg-gray-100"
+              className="bg-white text-black px-8 py-4 rounded-md font-bold hover:bg-gray-100 transition"
             >
               View Services
             </a>
@@ -61,14 +57,14 @@ export default function Home() {
       <section id="gallery" className="py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <h2 className="text-5xl font-black mb-4">Recent Work</h2>
-          <p className="text-gray-600 text-lg">Fresh cuts. Clean fades. Professional results.</p>
+          <p className="text-gray-600 text-lg">Real cuts. Real results.</p>
         </div>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="relative h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
             <Image
-              src="/IMG_0271.jpeg"
-              alt="KJ Cuts - Professional Cut"
+              src="/IMG_0170.jpeg"
+              alt="KJ Cuts Haircut"
               fill
               style={{ objectFit: 'cover' }}
               className="group-hover:scale-110 transition duration-500"
@@ -78,7 +74,7 @@ export default function Home() {
           <div className="relative h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
             <Image
               src="/IMG_0273.jpeg"
-              alt="KJ Cuts - Fresh Fade"
+              alt="KJ Cuts Haircut"
               fill
               style={{ objectFit: 'cover' }}
               className="group-hover:scale-110 transition duration-500"
@@ -91,50 +87,44 @@ export default function Home() {
       <section id="services" className="py-24 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center mb-16">
           <h2 className="text-5xl font-black mb-4">Services</h2>
-          <p className="text-gray-600 text-lg">Choose your cut. Book in seconds.</p>
+          <p className="text-gray-600 text-lg">Choose your cut</p>
         </div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           {/* REGULAR */}
-          <div className="bg-white border border-gray-200 p-10 rounded-2xl shadow-sm hover:shadow-xl transition group">
-            <div className="text-4xl mb-6">✂️</div>
-            <h3 className="text-3xl font-bold text-black mb-3">Regular Cut</h3>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Fresh fade, clean lineup, professional finish. Everything you need, nothing you don't.
+          <div className="bg-white border border-gray-200 p-10 rounded-2xl shadow-sm hover:shadow-xl transition">
+            <h3 className="text-3xl font-bold text-black mb-4">Regular Cut</h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Clean, professional haircut.
             </p>
-            <div className="flex items-baseline gap-2 mb-6">
-              <span className="text-5xl font-black text-black">$20</span>
-              <span className="text-gray-500">/ 30 min</span>
-            </div>
+            <p className="text-5xl font-black text-black mb-2">$20</p>
+            <p className="text-gray-500 mb-6">30 minutes</p>
             <a
               href="https://calendly.com/carter-carterschmeling/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-black text-white py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition group-hover:bg-blue-600"
+              className="block text-center bg-black text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition"
             >
               Book Regular
             </a>
           </div>
 
           {/* VIP */}
-          <div className="relative bg-gradient-to-br from-gray-900 to-black text-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition group overflow-hidden">
+          <div className="relative bg-gradient-to-br from-gray-900 to-black text-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition overflow-hidden">
             <div className="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
               Premium
             </div>
-            <div className="text-4xl mb-6">👑</div>
-            <h3 className="text-3xl font-bold mb-3">VIP Experience</h3>
-            <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-              Extended session. Extra detail. Styling. The works.
+            <h3 className="text-3xl font-bold mb-4">VIP Cut</h3>
+            <p className="text-gray-300 mb-6 text-lg">
+              Full haircut with two hot towel treatments and a refreshing face mask.
             </p>
-            <div className="flex items-baseline gap-2 mb-6">
-              <span className="text-5xl font-black">$60</span>
-              <span className="text-gray-400">/ 1 hour</span>
-            </div>
+            <p className="text-5xl font-black mb-2">$60</p>
+            <p className="text-gray-400 mb-6">1 hour</p>
             <a
               href="https://calendly.com/carter-carterschmeling/1-hour-vip-haircut"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-white text-black py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition group-hover:bg-blue-500 group-hover:text-white"
+              className="block text-center bg-white text-black px-6 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition"
             >
               Book VIP
             </a>
@@ -147,25 +137,25 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <span className="text-2xl">📍</span>
-            <p className="text-lg">Home studio — address shared after booking</p>
+            <p className="text-lg">Home studio — address sent after booking</p>
           </div>
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <span className="text-2xl">💵</span>
-            <p className="text-lg">Cash or Apple Cash accepted</p>
+            <p className="text-lg">Cash or Venmo</p>
           </div>
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <span className="text-2xl">⏰</span>
-            <p className="text-lg">Book online 24/7 — flexible hours</p>
+            <p className="text-lg">Book online anytime</p>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-10 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-lg font-bold mb-2">KJ CUTS</p>
-          <p className="text-gray-400 text-sm">© 2025 — All appointments by booking only</p>
-        </div>
+      <footer className="bg-black text-white py-10 text-center">
+        <p className="font-bold text-lg">KJ CUTS</p>
+        <p className="text-gray-400 text-sm">
+          © 2025 · Appointments only
+        </p>
       </footer>
     </div>
   );
